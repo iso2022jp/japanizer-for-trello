@@ -9,150 +9,103 @@
 	var texts = {
 
 		//
-		// Log In
+		// Sign up - /signup
 		//
+
+		'Create an Account': 'アカウントを作成',
+		'\n          Name\n        ': '名前',
+		'\n          Email\n        ': 'メールアドレス',
+        '\n          Password\n        ': 'パスワード',
+        'Create New Account': '新しいアカウントを作成',
+        ' Already have an account? ': '既にアカウントをお持ちですか？',
+		'Log In.': 'ログイン',
+        ' Or sign up with: ': 'または、以下のアカウントで登録: ',
+        'Google Account': ' Google アカウント ',
+        ' By signing up, you agree to our ': 'アカウント登録の際には以下に同意してください。',
+        'Privacy Policy': 'プライバシーポリシー',
+        ' and ': 'と',
+        'Terms of Service': '利用規約',
+
+		//
+		// Log In - /login
+		//
+
 		Email: 'メールアドレス',
 		Password: 'パスワード',
 		'Sign Up': '新規登録',
 		'Log In': 'ログイン',
 		'Forgot password?': 'パスワードを忘れた。',
 		' New? ': ' 初めてですか？ ',
+		' New here? ': '初めてですか？',
 		'Create an Account.': 'アカウントを作成',
 		' Or log in with: ': ' または、以下のアカウントでログイン: ',
 		' Google Account ': ' Google アカウント ',
 		'Forgot your password?': 'パスワードをお忘れですか？',
 		'\n            New here? ': '初めてですか？',
+		// Create an Account
 
+		'   The email or password was incorrect.  ': 'メールアドレスかパスワードが違います。',
 		'\n              The email or password was incorrect.\n          ': 'メールアドレスまたはパスワードが違います。',
 
+		//
+		// Password Recovery - /forgot
+		//
+
 		'\n        Forgot your password?\n      ': 'パスワードをお忘れですか？',
-		'\n        Submit your email address and we’ll send you a link to reset your password.\n      ': 'パスワードをリセットするためのリンクをメールでお送りします。',
-		'\n          Email address:\n        ': 'メールアドレス',
-		' New here? ': '初めてですか？',
-		'   The email or password was incorrect.  ': 'メールアドレスかパスワードが違います。',
+		' Submit your email address and we’ll send you a link to reset your password. ': 'パスワードをリセットするためのリンクをメールでお送りします。',
+		' Email address: ': 'メールアドレス: ',
 		Submit: '送信',
 
-		//
-		// Sign up
-		//
-		'Create an Account': 'アカウントを作成',
-		'\n          Name\n        ': '名前',
-		'\n          Email\n        ': 'メールアドレス',
-        '\n          Password\n        ': 'パスワード',
-        'Create New Account': '新しいアカウントを作成',
-        '\n            Already have an account? ': '既にアカウントをお持ちですか？',
-		'Log In.': 'ログイン',
-        ' Or sign up with: ': 'または、以下のアカウントで登録: ',
-        'Google Account': ' Google アカウント ',
-        '\n      By signing up, you agree to our ': 'アカウント登録の際には以下に同意してください。',
-        'Privacy Policy': 'プライバシーポリシー',
-        ' and ': 'と',
-        'Terms of Service': '利用規約',
+		// 'Sending…': '送信中…',
+		'There’s no Trello account associated with that email address.': 'そのメールアドレスが登録されている Trello のアカウントはありません。',
 
 		//
 		// Common
 		//
 
-		// Toolbar
+		//
+		// Header Toolbar
+		//
 		Help: 'ヘルプ',
 		Notifications: '通知',
 		Boards: 'ボード',
+		
+		//
+		// Board Sidebar (2014-01-14)
+		//
+		'  Starred Boards    ': ' スターのついたボード ',
+		'  Recent Boards    ': ' 最近使ったボード ',
+		' Show all boards. ': 'すべてのボードを表示',
+		' Only show important boards. ': 'よく使うボードだけを表示',
+		' Always keep this menu open. ': 'メニューを常に表示する',
+		' Don\'t keep this menu open. ': 'メニューを常に表示しない',
+		' See closed boards… ': '閉じたボードを表示…',
+		
+		//
+		// Popover: Add
+		//
+		' A board is a collection of cards ordered in a list of lists. Use it to manage a project, track a collection, or organize anything. '
+				: ' ボードにはいくつかのリストが並び、リストにはカードが並びます。プロジェクトの管理や追跡など、何かをまとめるのに使います。',
+		' An organization is a group of boards and people. Use it to group boards in your company, team, or family. '
+				: ' 組織はメンバーとボードをまとめたものです。会社やチーム、家族などのグループで使います。 ',
 
-		// Popup Menu: Notifications
+		//
+		// Popover: Notifications
+		//
 		'See All Notifications': '全ての通知を見る',
 		'Change Notification Email Frequency': '通知メールの設定',
 
-		// Popup Menu: Boards
+		//
+		// Popover: Boards
+		//
 		' My Boards': ' マイボード',
 		'See All Boards': '全てのボードを見る',
 		'New Board…': '新しいボード…',
 		'View Closed Boards': '閉じたボードを表示',
 
-		// Popup Form: Create Board
-		Title: 'タイトル',
-		Organization: '組織',
-		'(none)': '（なし）',
-		'This board will be ': 'このボードは',
-			private: '非公開',
-			'org visible': '組織内',
-			public: '公開',
-		'Change.': '変更',
-		Create: '作成', // submit button
-
-		// Popup Dialog: Change Visibility
-		'Private ': '非公開 ',
-		'Organization ': '組織内 ',
-		'Public ': '公開 ',
-
-		// Popup Dialog: Add an Organization
-		'Create an Organization': '組織を作成', // link button
-
-		// Popup Form: Create Organization
-		Name: '名前',
-		'Description ': '説明 ',
-		'(optional)': '（オプション）',
-
-		// Floating Window: Closed Boards
-		'Closed Boards': '閉じたボード',
-		'Re-open': '開き直す',
-
-		// Popup Menu: (user)
-		Cards: 'カード',
-		Profile: 'プロフィール',
-		'Organizations…': '組織…',
-		'New board…': '新しいボード…',
-		'New Organization…': '新しい組織…',
-		'Share Trello': 'Trello をシェアする',
-		'Account Settings…': 'アカウントの設定…',
-		'Log Out': 'ログアウト',
-
-		// Popup Menu: Organizations
-
-		// Popup Menu: Account Settings
-		'Change Name, Initials, or Bio': '名前・愛称・自己紹介の変更',
-		'Change Email Address': 'メールアドレスの変更',
-		'Change Avatar': 'アイコンの変更',
-		'Set Password': 'パスワードの設定',
-		'Change Password': 'パスワードの変更',
-		'Enable Color Blind Friendly Mode': '色覚サポートを有効にする',
-		'Disable Color Blind Friendly Mode': '色覚サポートを無効にする',
-		'See all options': '全てのオプションを見る',
-
-		// Popup Form: Change Name and Bio
-		'Full Name': '氏名',
-		Initials: '愛称',
-		Username: 'ユーザー名',
-		Bio: '自己紹介',
-		Save: '保存', // submit button
-			'Initials must contain 1-4 characters': '愛称は 1～4 文字で入力して下さい。',
-			'Full Name must be at least 1 character': '氏名は 1 文字以上で入力して下さい。',
-			'Username must be at least 3 characters': 'ユーザー名は 3 文字以上で入力して下さい。',
-			'Username is taken': 'そのユーザー名は既に使われています。',
-
-		// Popup Form: Change Email
-		' Your email address is currently ': '現在のメールアドレス',
-		'New Email Address': '新しいメールアドレス',
-		'Send Confirmation Email': '確認メールを送信', // submit button
-			'invalid email address': '無効なメールアドレスです。',
-
-		// Popup Menu: Change Avatar
-		'Uploaded Picture': 'アップロードした画像',
-		'Initials (no avatar)': '愛称（画像なし）',
-		'Take Photo With Camera': 'カメラで写真を撮影',
-		'Upload a  new  picture': '新しい画像をアップロード',
-
-		// Popup Form: Take a Photo
-		'Trying to access your computer\'s camera… Check the banner at the top of the page.': 'カメラにアクセスしています… ページ上部のバナーを確認してください。',
-		'Couldn\'t find a camera to connect to…': '接続できるカメラが見つかりません。',
-		'Try again': 'もう一度',
-		'Snap Photo': '撮影', // submit button
-
-		// Popup Form: Set Password / Change Password
-		'Old Password': '現在のパスワード',
-		' New  Password': '新しいパスワード',
-		' New  Password (again)': '新しいパスワード（再入力）',
-
-		// Popup Menu: Send Emails
+		//
+		// Popover: Send Emails
+		//
 		Never: 'なし',
 		'Never ': 'なし ',
 		Periodically: '定期的',
@@ -164,76 +117,285 @@
 		' Send emails as soon as possible. ': '通知があればすぐにメールを送ります。',
 
 		//
-		// Generic View
+		// Popover: Create Board
+		//
+		Title: 'タイトル',
+		Organization: '組織',
+		'(none)': '（なし）',
+		'This board will be ': 'このボードは',
+			private: '非公開',
+			'org visible': '組織内',
+			public: '公開',
+		'Change.': '変更',
+		Create: '作成', // submit button
+
+		//
+		// Popover: Change Visibility
+		//
+		'Private ': '非公開 ',
+		'Organization ': '組織内 ',
+		'Public ': '公開 ',
+		' This board is private.  Only people added to the board can view and edit it.  '
+				: ' ボードを非公開にします。ボードに追加したメンバーだけが表示及び編集できます。 ',
+		// Org Visible は可変メッセージなのでパターンマッチへ。但し既定時のみ the organization になるので対応。
+		' This board is visible to members of the organization.  Only people added to the board can edit.   '
+				: ' ボードを組織のメンバーだけに公開します。ボードに追加したメンバーだけが編集できます。 ',
+		' The board must be added to an org to enable this. '
+				: 'ボードを組織に追加すると選択できます。',
+		' This board is public. It\'s visible to anyone with the link and will show up in search engines like Google.  Only people added to the board can edit.  '
+				: 'ボードを公開します。ボードやその URL は誰でも表示でき、Google などの検索エンジンに登録される可能性もあります。ボードに追加したメンバーだけが編集できます。 ',
+
+		//
+		// Popover: Add an Organization
+		//
+		'Create an Organization': '組織を作成', // link button
+		' An organizations is a collection of members and boards. They make sharing and working within a group even easier. '
+				: ' 組織はメンバーとボードをまとめたものです。組織を使うとグループ作業や情報共有が簡単になります。 ',
+
+		//
+		// Popover: Create Organization
+		//
+		Name: '名前',
+		'Description ': '説明 ',
+		'(optional)': '（オプション）',
+		' An organization is a group of boards and members. '
+				: ' 組織はメンバーとボードのグループです。 ',
+
+
+		'Display Name must be at least 1 character': '名前は 1 文字以上で入力して下さい。',
+
+		//
+		// Floating Window: Closed Boards
+		//
+		'Closed Boards': '閉じたボード',
+		'Re-open': '開き直す',
+		'You have to have been a board admin to re-open a closed board.'
+				: 'ボードを開き直せるのは、閉じる前にボードの管理者だったメンバーです。',
+
+		//
+		// Popover: (user)
+		//
+		Cards: 'カード',
+		// Boards
+		Profile: 'プロフィール',
+		'Organizations…': '組織…',
+		// Notifications
+		'New board…': '新しいボード…',
+		'New Organization…': '新しい組織…',
+		// Help
+		'Share Trello': 'Trello をシェアする',
+		'Account Settings…': 'アカウントの設定…',
+		'Log Out': 'ログアウト',
+
+		//
+		// Popover: Organizations
 		//
 
-		// Side Menu
+		//
+		// Popover: Account Settings
+		//
+		'Change Name, Initials, or Bio': '名前・愛称・自己紹介の変更',
+		'Change Email Address': 'メールアドレスの変更',
+		'Change Avatar': 'アイコンの変更',
+		'Set Password': 'パスワードの設定',
+		'Change Password': 'パスワードの変更',
+		// Change Notification Email Frequency
+		'Enable Color Blind Friendly Mode': '色覚アシストを有効にする',
+		'Disable Color Blind Friendly Mode': '色覚アシストを無効にする',
+		'See all options': '全てのオプションを見る',
+
+		//
+		// Popover: Change Name and Bio
+		//
+		'Full Name': '氏名',
+		Initials: '愛称',
+		Username: 'ユーザー名',
+		Bio: '自己紹介',
+		'Bio ': '自己紹介',
+		Save: '保存', // submit button
+
+		'Initials must contain 1-4 characters': '愛称は 1～4 文字で入力して下さい。',
+		'Full Name must be at least 1 character': '氏名は 1 文字以上で入力して下さい。',
+		'Username must be at least 3 characters': 'ユーザー名は 3 文字以上で入力して下さい。',
+		'Username is taken': 'そのユーザー名は既に使われています。',
+
+		' Your initials are used in place of your avatar if your avatar is not set. Usernames require a minimum of 3 characters, alphanumeric only. '
+				: ' アイコン画像を指定しない場合、代わりに愛称が使われます。ユーザー名は最低 3 文字で、英数字のみが使用できます。',
+
+		//
+		// Popover: Change Email
+		//
+		' Your email address is currently ': '現在のメールアドレス',
+		'New Email Address': '新しいメールアドレス',
+		'Send Confirmation Email': '確認メールを送信', // submit button
+		' This change will take effect after you click on the link in the confirmation email sent to the new email address. '
+				: '新しいメールアドレスに届く確認メールに記載しているリンクをクリックすると、メールアドレスの変更が完了します。',
+
+		'invalid email address': '無効なメールアドレスです。',
+
+		//
+		// Popover: Change Avatar
+		//
+		'Uploaded Picture': 'アップロードした画像',
+		'Initials (no avatar)': '愛称（画像なし）',
+		'Take Photo With Camera': 'カメラで写真を撮影',
+		'Upload a  new  picture': '新しい画像をアップロード',
+
+		//
+		// Popover: Take a Photo
+		//
+		'Trying to access your computer\'s camera… Check the banner at the top of the page.': 'カメラにアクセスしています… ページ上部のバナーを確認してください。',
+		'Couldn\'t find a camera to connect to…': '接続できるカメラが見つかりません。',
+		'Try again': 'もう一度',
+		'Snap Photo': '撮影', // submit button
+
+		//
+		// Popover: Set Password / Change Password
+		//
+		'Old Password': '現在のパスワード',
+		' New  Password': '新しいパスワード',
+		' New  Password (again)': '新しいパスワード（再入力）',
+
+		'New password must be at least 4 characters long': '新しいパスワードは 4 文字以上で入力してください。',
+		'Passwords must match.': '新しいパスワードが一致しません。',
+		'The old password was incorrect': '現在のパスワードが違います。',
+
+		//
+		// Main Side Menu
+		//
+		// Change Avatar
 		'Account Settings': 'アカウントの設定',
 		'Billing': '課金情報', // Gold
+		'User Guide ': 'ユーザーガイド',
+		// Get Business Class
 
-		// Boards / Main
+		//
+		// Boards - /
+		//
 		'My Boards': 'マイボード',
+		Overview: '概要',
+		'New board in organization…': '新しいボード…',
+		'Overview ': '概要',
+
+		//
+		// Organization Overview - /$org
+		//
+		Members: 'メンバー',
 		'My Org Boards': '参加ボード',
 		'Other Org-Visible Boards': '他のボード',
-		Overview: '概要',
-		'New board in organization…': 'この組織の新しいボード…',
-
-		// Organization Overview
 		'Change Logo': 'ロゴの変更',
-		'Add Member…': 'メンバーの追加…', // side menu
+		'Add Member…': 'メンバーを追加…', // side menu
+		// New Board…
 		'Organization Settings': '組織の設定', // side menu
+
 		'Change Name and Details': '名前や詳細情報の変更', // link button
-		'Add Members': 'メンバーの追加', // link button
+		' Edit profile': 'プロフィールの変更', // link button
+		'Add Members': 'メンバーを追加', // link button
 		'No boards.': 'ボードがありません。',
 
-			// Popup Form: Update Details
-			'Orgname ': '組織ユーザー名',
-			'(used in URLs)': '（URL の一部として使用）',
-			'Website ': 'Web サイト',
-			Update: '更新',
+		//
+		// Popover: Update Details
+		//
+		'Orgname ': '組織ユーザー名',
+		'Short Name': '組織ユーザー名',
+		'(used in URLs)': '（URL の一部として使用）',
+		Website: 'Web サイト',
+		// (option)
+		// Description
+		Update: '更新',
 
-			// Popup Menu: Change Logo
-			' Upload a new logo ': ' 新しいロゴをアップロード ',
-			'Remove Logo': 'ロゴを削除',
+		'   Your orgname is used in various URLs. Minimum of 3 characters, alphanumeric only, no spaces.  '
+				: ' 組織ユーザー名は URL の一部になります。最低 3 文字で、英数字のみが使用できます。空白は使用できません。',
 
-			// Popup Form: (User)
-			'(Admin)': '（管理者）',
-			'(Normal)': '（一般）',
-			'Edit profile info': 'プロフィールを編集',
-			' Change permissions… ': '権限を変更…',
-			'  Leave Organization…   ': '組織から外れる…',
-			'   Remove from Organization…  ': '組織から外す…',
-			'Leave Organization': '組織から外れる',
-			'Remove Member': 'メンバーを外す',
+		// Display Name must be at least 1 character
+		'Orgname must be at least 3 characters': '組織ユーザー名は 3 文字以上で入力してください。',
+		'Orgname is taken': 'その組織ユーザー名は既に使われています。',
 
-			// Popup Form: Change Permissions
-			' Admin  ': '管理者',
-			' Admin ': '管理者',
-			' Normal  ': '一般',
-			' Normal ': '一般',
-			'Can view, create and edit org boards, and change settings for the organization.'
-					: '組織のボードを表示・作成・編集することができます。また組織の設定を変更することができます。',
-			'Can view, create, and edit org boards, but not change settings.'
-					: '組織のボードを表示・作成・編集することができますが、組織の設定を変更することはできません。',
+		//
+		// Popover: Members
+		//
+		' Search for a person in Trello by name or email address, or enter an email address to invite someone new. '
+				: ' ユーザーは Trello 上の名前かメールアドレスで検索できます。メールアドレスを入力することで、新しいユーザーを招待することもできます。 ',
 
-		// Organization (account)
+		'Select to add.': '選択して追加します。',
+		'No results': '見つかりませんでした',
+		// 'Unconfirmed User': '',
+		'? We don’t know that person. Add a name and click “Send” and we’ll add a virtual member and send them an invite email. They\'ll automatically receive access to the board once they sign up and confirm their email address. '
+				: '? Trello はこのメールアドレスの持ち主を知りません。氏名を入力して「送信」を押すと、Trello に仮メンバーを追加して招待メールを送ります。受信者が Trello に登録してメールアドレスを確認すると、正式にメンバー登録されます。',
+		Send: '送信',
+
+		//
+		// Popover: Change Logo
+		//
+		' Upload a new logo ': ' 新しいロゴをアップロード ',
+		'Remove Logo': 'ロゴを削除',
+
+		//
+		// User Card (Organization)
+		//
+		'(Admin)': '（管理者）',
+		'(Normal)': '（一般）',
+		'(Virtual)': '（仮登録）',
+		'Edit profile info': 'プロフィールを編集',
+		' Change permissions… ': '権限を変更…',
+		'  Leave Organization…   ': '組織から外れる…',
+		'   Remove from Organization…  ': '組織から外す…',
+		'Leave Organization': '組織から外れる',
+		'Remove Member': 'メンバーを外す',
+
+		' You can’t leave because you are the only admin. To make another user an admin, click their avatar, select “Change permissions…”, and select “Admin”. '
+				: 'あなたは唯一の管理者のため、外れることはできません。他の利用者を管理者にするためには、アイコンをクリックして「権限を変更…」から管理者にしてください。',
+		' This user will be able to access this board once they sign up with Trello and confirm their email address. '
+				: 'このメンバーが Trello に登録してメールアドレスを確認すると、ボードにアクセスできるようになります。',
+
+		//
+		// Popover: Change Permissions (Organization)
+		//
+		' Admin  ': '管理者',
+		' Admin ': '管理者',
+		' Normal  ': '一般',
+		' Normal ': '一般',
+		'Can view, create and edit org boards, and change settings for the organization.'
+				: '組織のボードを表示・作成・編集することができます。また組織の設定を変更することができます。',
+		'Can view, create, and edit org boards, but not change settings.'
+				: '組織のボードを表示・作成・編集することができますが、組織の設定を変更することはできません。',
+
+		//
+		// Organization Members - /$org/members
+		//
+		'   Remove  ': '削除',
+		'  Leave   ': '外れる',
+		' You can\’t change roles because there must be at least one admin. '
+				: '最低一人の管理者が必要なので、権限を変更することができません。',
+		
+		//
+		// Organization Settings - /$org/account
+		//
 		'Name and Details': '名前や詳細情報',
 		'Organization Visibility': '組織の公開範囲',
 		'Delete this organization?': '組織を削除',
 
-			// Popup Dialog: Delete Organization?
-			'Delete Forever': 'それでも削除する',
+		//
+		// Popover: Select Visibility
+		//
+		'This organization is private. It\'s not indexed or visible to those outside the org.'
+				: '組織を非公開にします。インデックス登録されず、組織のメンバー以外には表示されません。',
+		'This organization is public. It\'s visible to anyone with the link and will show up in search engines like Google. Only those invited to the org can add and edit org boards.'
+				: '組織を公開します。組織の URL は誰でも表示でき、Google などの検索エンジンに登録される可能性もあります。組織に招待したメンバーだけがボードの追加・編集できます。',
 
-		// Cards
+		//
+		// Popover: Delete Organization?
+		//
+		' Deleting an organization is permanent.        Are you sure you want to delete this organization? There is no undo.        Boards with this organization won\'t be deleted. Your boards in this        organization will appear in your personal boards list. '
+				: '組織の削除は元に戻せません。それでも組織を削除してもよろしいですか？ 組織の持つボードは削除されません。自分がメンバーである組織のボードはマイボードに表示されるようになります。',
+		'Delete Forever': 'それでも削除する',
+
+		//
+		// Cards - /$user/cards
+		//
 		'Sorting by ': '並び替え: ',
 		'due date': '期限',
-		'board': 'ボード',
-
-			// Popup Menu: Sort and Filter Cards
-			'Sort by board ': 'ボードで並び替え ',
-			'Sort by due date ': '期限で並び替え ',
-
-		// Cards (by due date)
+		board: 'ボード',
 		'Due in the Next Day': '本日中',
 		'Due in the Next 7 Days': '7 日以内',
 		'Due in the Next Month': '今月中',
@@ -241,45 +403,82 @@
 		'Overdue Cards': '期限を過ぎているカード',
 		'Cards with No Due Date': '期限のないカード',
 
-		// Profile
+		//
+		// Popover: Sort and Filter Cards
+		//
+		'Sort by board ': 'ボードで並び替え ',
+		'Sort by due date ': '期限で並び替え ',
+
+		//
+		// Profile - /$user
+		//
 		'(change)': '（変更）',
 		'Edit Name, Initials, or Bio': '名前・愛称・自己紹介を編集',
 		Trophies: 'トロフィー',
 		Organizations: '組織',
 		Activity: '動き',
-		'Load More Activity': '続きを読み込む',
+		'Load More Activity': '続きを見る',
 
-		// Notifications
-		'Load More Notifications': '続きを読み込む',
+		//
+		// Notifications - /$user/notifications
+		//
+		'Load More Notifications': '続きを見る',
 		' Don\'t send emails.    (change) ': ' メール通知なし（変更） ',
 		'  Send emails periodically.   (change) ': ' 定期的にメールで通知（変更） ',
 		'   Send emails instantly.  (change) ': ' 直ちにメールで通知（変更） ',
 
-		// Account
+		//
+		// Account - /$user/account
+		//
 		'Account Details': 'アカウントの詳細',
 		Accessibility: 'アクセシビリティー',
 		Applications: 'アプリ連携',
+		Sessions: '接続履歴',
+		'Log Out Other Sessions': '他の接続をログアウト', // button
+		'Delete this account?': 'アカウントを削除',
+
+		' read and write access on all your boards, read and write access on all your organizations '
+				: '全てのボードに対する読み書きアクセス、全ての組織に対する読み書きアクセス',
+		' read and write access on your account, read and write access on all your boards, read and write access on all your organizations '
+				: 'アカウント情報に対する読み書きアクセス、全てのボードに対する読み書きアクセス、全ての組織に対する読み書きアクセス',
+		// Approved
 		' Never Expires  ': '有効期限なし',
 		Revoke: '取り消す', // button
-		Sessions: '接続履歴',
+
 		'(current session)': '（現在の接続）',
-		'Log Out Other Sessions': '他の接続をログアウト', // button
-		'Delete your account?': 'アカウントを削除',
+		// Last used
 
-			// Popup Dialog: Delete Account?
-			'Send the Email': 'メールを送る',
-			'Never Mind': 'やっぱりやめる',
+		//
+		// Popover: Delete Account?
+		//
+		' Deleting your member account (': 'あなたのアカウント (',
+		') will be permanent. ': ') の削除は元に戻せません。',
+		'You will lose access to your boards and organizations.': 'あなたは全てのボードや組織にアクセスできなくなります。',
+		' Would you like us to send an email to ': '',
+		' that contains a link that you can use to delete your account? ': '宛に、アカウントを削除するためのリンクをメールで送りますか？',
+		'Send the Email': 'メールを送る',
+		'Never Mind': 'やっぱりやめる',
 
-		// Billing (Gold)
+		//
+		// Billing (Gold) - /$user/billing
+		//
 		'Trello Gold is  active! ': 'Trello Gold は有効です！',
 		' Your credits will expire on ': '有効期限が切れる日: ',
 		'Add Billing Information': '支払情報の追加', // button
+		' Keep using Trello in style, even after your credits expire! ': '有効期限が切れても、いつも通り Trello をお使い下さい！',
 		'Billing History': '課金履歴',
-		// ' Keep using Trello in style, even after your credits expire! ': '有効期限が切れても、Trello の基本機能は使えます！',
 		'Cancel Trello Gold…': 'Trello Gold をキャンセルする…',
-		'Cancel Trello Gold': 'Trello Gold をキャンセル',
 
-		// Credit Card for account (Gold)
+		//
+		// Popover: Cancel Trello Gold?
+		//
+		'Cancel Trello Gold': 'Trello Gold をキャンセル',
+		' This will cancel your paid account. We will keep your data and your account will still be usable. You can reinstate the paid account at any time by re-entering credit card information. '
+				: '有料アカウントをキャンセルします。アカウントやデータは引き続き利用できます。クレジットカード情報を入力することでいつでも有料アカウントに戻すことができます。',
+
+		//
+		// Credit Card for account (Gold) - /$user/billing/card
+		//
 		'Credit Card for account': 'クレジットカード情報',
 		' Name: ': '名前:',
 		'(as it appears on the credit card)': '（クレジットカードに表示されている通りに）',
@@ -299,7 +498,12 @@
 		'Continue': '続行',
 
 		//
-		// Board View
+		// Search - /search
+		//
+		// No results
+
+		//
+		// Board View - /b/$board
 		//
 
 		// Toolbar
@@ -311,26 +515,9 @@
 		'Filtering is on.': '絞込み中',
 		'Show sidebar': 'サイドバーを表示',
 
-		// Popup Form: Member
-		'Can view and edit cards, remove members, and change settings for the board.'
-				: 'カードの表示・編集、メンバーの削除、ボードの設定の変更ができます。',
-		'Can view and edit cards. Can\'t change settings.'
-				: 'カードの表示・編集はできますが、ボードの設定を変更することはできません。',
-		'View Member’s Board Activity': 'メンバーの動きを表示',
-		'  Leave Board…   ': 'ボードから外れる…',
-		'Leave Board': 'ボードから外れる',
-		' You can’t leave because you are the only admin. To make another user an admin, click their avatar, select “Change permissions…”, and select “Admin”. '
-				: 'あなたは唯一の管理者のため、ボードから外れることはできません。他の利用者を管理者にするためには、アイコンをクリックして「権限を変更…」から管理者にしてください。',
-
-		'   Remove from Board…  ': 'ボードから外す…',
-
-		// Floating Window: Board Information
-		'Edit the board description.': 'ボードの説明を編集',
-		' accepted': ' が使えます',
-
 		// Sidebar
 		Menu: 'メニュー',
-		Members: 'メンバー',
+		// Members: 'メンバー',
 		'Add Members…': 'メンバーを追加…',
 		'View all activity…': '全ての動きを表示…',
 
@@ -343,155 +530,272 @@
 		'Subscribe ': '通知を受け取る',
 		'Subscribed ': '注目中',
 		' Pin to Header Menu ': 'ヘッダーメニューに表示する',
-		'Pinned to Header Menu': 'ヘッダーメニューに表示中',
+		'Pinned to Header Menu': 'ヘッダーメニューに表示',
 		'Copy Board…': 'コピー…',
 		'Share, Print, and Export…': '共有・印刷・エクスポート…',
 		'Close Board…': 'ボードを閉じる…',
 		'Leave Board…': 'ボードのメンバーから外れる',
 
+		//
+		// Floating Window: Board Information
+		//
+		'Edit the board description.': 'ボードの説明を編集',
+		' accepted': ' が使えます',
+
+		//
+		// User Card (Board)
+		//
+		// Change permissions…
+		'View Member’s Board Activity': 'メンバーの動きを表示',
+		'  Leave Board…   ': 'ボードから外れる…',
+		'   Remove from Board…  ': 'ボードから外す…',
+
+		//
+		// Popover: Leave Board?
+		//
+		// メッセージは可変なのでパターンマッチで
+		'Leave Board': 'ボードから外れる',
+
+		//
+		// Popover: Remove Member?
+		//
+		// メッセージは可変なのでパターンマッチで
+
+		//
+		// Popover: Change Permissions (Board)
+		//
+		'Can view and edit cards, remove members, and change settings for the board.'
+				: 'カードの表示・編集、メンバーの削除、ボードの設定の変更ができます。',
+		'Can view and edit cards. Can\'t change settings.'
+				: 'カードの表示・編集はできますが、ボードの設定を変更することはできません。',
+
+		//
 		// Sub Menu: Filter Cards
+		//
 		Back: '戻る',
+		' Type to filter by term or search for labels, members, or due times. ': ' タイトルやラベル・メンバーを入力して絞り込みます。 ',
+		'green label (default)': '緑のラベル',
+		'yellow label (default)': '黄のラベル',
+		'orange label (default)': '橙のラベル',
+		'red label (default)': '赤のラベル',
+		'purple label (default)': '紫のラベル',
+		'blue label (default)': '青のラベル',
 		'Due in the next day': '今日が期限',
 		'Due in the next week': '今週が期限',
 		'Due in the next month': '今月が期限',
 		Overdue: '期限を過ぎている',
 		'Clear Filter': '絞り込みをクリア',
-		' Type to filter by term or search for labels, members, or due times. ': ' タイトルやラベル・メンバーを入力して絞り込みます。 ',
 
+		//
 		// Sub Menu: Archive
+		//
 		'Switch to ': '表示の切り替え: ',
 		lists: 'リスト',
 		cards: 'カード',
 		'No archived cards.': 'アーカイブされたカードはありません。',
 		'Archived': 'アーカイブ',
 		'Send to Board': 'ボードに戻す',
-		'Load more cards.': '続きを読み込む',
+		'Load more cards.': '続きを見る',
 
+		//
 		// Sub Menu: Stickers
+		//
 		'Taco Pack': 'Taco パック',
 		'Pete the Computer': 'コンピュータ',
 		'Custom Stickers': 'カスタムステッカー',
 		' Deleting a sticker is permanent. There is no undo. ': 'ステッカーの削除は元に戻せません。',
 
-		// Sub Menu: Power-Ups
-		'Back to Power-Ups': '拡張機能に戻る',
+		//
+		// Floating Window: Power-ups
+		//
+		Voting: '投票',
+		' Allow people to vote on cards. ': ' カードに投票できるようになります。  ',
+		'Card Aging': 'カードの老化',
+		' Cards visibly age with inactivity. ': ' 動きのないカードの見た目が変化します。  ',
+		// Calendar
+		' See your cards with due dates on a calendar. ': ' 期限日を持つカードをカレンダー上に表示します。  ',
 		' Click for details… ': '詳細を見る…',
-		'More…': '詳細…',
+
 		Enabled: '有効',
 		Disabled: '無効',
 		Enable: '有効化',
 		Disable: '無効化',
-		Screenshots: 'スクリーンショット',
 
-		Voting: '投票機能',
-		' Allow people to vote on cards. ': ' カードに投票できるようになります。  ',
-		'Who is allowed to vote on cards?': 'カードに投票可能な権限の設定',
+		'Back to Power-Ups': '拡張機能に戻る',
+		'More…': '詳細…',
+		Screenshots: 'スクリーンショット',
+		// Settings
+
+		// Voting
+		' Enable this power-up to allow users to vote on your cards. Votes are stored and synchronized between all users sharing this board. Choose between multiple permission levels for which users can vote on cards. View the number of votes on each card from the main Trello list pane or in a card\'s detail pane.  '
+				: 'この拡張機能を有効にすると利用者がカードに投票することができるようになります。投票はボードの利用者全員で共有・同期されます。カードに投票する権限は数種類から選択できます。投票数は一覧画面や詳細画面に表示されます。',
+		'Who is allowed to vote on cards?': 'カードに投票可能な権限',
 		'Members and Observers': 'メンバーと観察者',
 		' Available only on boards with observers. ': '観察者がいるボードの場合に選択できます。',
 		'Public members': '誰でも',
 		' Available on public boards. ': '公開ボードの場合に選択できます。',
 
-		'Card Aging': 'カードの老化',
-		' Cards visibly age with inactivity. ': ' 動きのないカードの見た目が変化します。  ',
-		'How do you want the aged cards to look?': '古いカードの見た目の設定',
+		// Aging
+		' Cards will visibly “age” as time passes without any activity. Regular mode will cause old cards to become progressively more transparent. Pirate mode will cause old cards to crack and tear like an old treasure map. Once cards have new activity on them, their age counter is reset and they appear new again. Age thresholds are 1, 2, and 4 weeks.  '
+				: '時間が経過しても動きがないカードは表示が「古く」なっていきます。標準モードでは古いカードは徐々に薄くなっていきます。海賊風モードでは古いカードは昔の宝の地図のようにひびが入ったり割けたりします。カード上で動きがあると古さはリセットされ新しい表示に戻ります。古さの閾値は 1, 2, 4 週間です。',
+		'How do you want the aged cards to look?': '古いカードの見た目',
 		'Regular Mode': '標準モード',
-		' Older cards become more transparent. ': ' 古いカードは徐々に透明になっていきます。 ',
+		' Older cards become more transparent. ': ' 古いカードは徐々に薄くなっていきます。 ',
 		'Pirate Mode': '海賊風モード',
 		' Older cards crackle and tear. ': ' 古いカードはひびが入ったり裂けたりします。 ',
 
-		' See your cards with due dates on a calendar. ': ' 期限日を使い、カレンダー上にカードを並べて表示します。  ',
-		'Enable iCalendar Feed?': 'iCalendar フィードを有効にするか？',
+		// Calendar
+		' Enable the calendar power-up to gain access to the Trello calendar view. Display cards with due dates in a weekly or monthly format for a time-based overview of cards. Most useful for time-sensitive projects and projects with multiple due dates.  '
+				: 'この拡張機能を有効にするとカレンダー表示が使えるようになります。期限を持つカードが時間に沿って週または月単位に表示されます。期限を重視するプロジェクト等で便利です。',
+		'Enable iCalendar Feed?': 'iCalendar フィード',
 		' Enabled': '有効',
 		' Disabled': '無効',
 		'Your Personal iCalendar Feed': '自分専用 iCalendar フィードの URL',
 		'Regenerate Your Feed URL ': 'フィード用 URL を再作成 ',
 
+		//
 		// Sub Menu: Settings
+		//
 		'Rename Board…': '名前を変更…',
-			Rename: '変更',
 		'  Change Organization…  ': '  組織を変更…  ',
-			Change: '変更',
+		'  Remove From Organization    ' : '組織から外す',
+		' Change Background… ': '背景を変更…',
 		'Change Visibility…': '公開範囲を変更…',
 			' Private': ' 非公開',
 			' Org Visible': ' 組織内',
 			' Public': ' 公開',
-		' Change Background… ': '背景を変更…',
 		'  Card Cover Images Enabled': '  カードのカバー画像が有効',
 		' Enable Card Cover Images  ': ' カードのカバー画像を有効化  ',
+		'Show images on front of cards.' : 'カードの前に画像を表示します。',
 		'Commenting Permissions…': 'コメント権限…',
 			'Organization members': '組織のメンバー',
 		'Invitations Permissions…': '招待権限…',
 			Admins: '管理者',
 		'Allow Org Members to Join ': '組織メンバーの参加を許可 ',
+		' Any org member can join this board without being invited.   '
+				: ' 組織のメンバーは招待されなくてもボードに参加することができます。',
+		' Any org member can join this board without being invited.  To enable this, the board has to be a part of an org.   To enable this, the board can\'t be private.  '
+				: ' 組織のメンバーは招待されなくてもボードに参加することができます。有効にするには、このボードを組織に追加してください。その場合ボードは非公開にはできません。',
+		' Any org member can join this board without being invited.  To enable this, the board has to be a part of an org.   '
+				: ' 組織のメンバーは招待されなくてもボードに参加することができます。有効にするには、このボードを組織に追加してください。',
 		'Email settings…': 'メールの設定…',
 		'Edit label names': 'ラベル名の編集',
 
-			// Sub Menu: Change Background
-			Photos: '写真',
-			'Patterns and Textures': 'パターンやテクスチャ',
-			Custom: 'カスタム',
-			'Uploading…': 'アップロード中…', // Gold
-			Options: 'オプション', // Gold
+		//
+		// Popover: Rename Board
+		//
+		Rename: '変更',
 
-			// Sub Menu: Background Options (Gold)
-			'Display Type': '表示種別',
-			' Cover  ': 'カバー',
-			' Tile  ': 'タイル',
-			'Board Text': 'ボードの文字',
-			' Light  ': '明るめ',
-			' Dark  ': '暗め',
-			'Delete background.': '背景を削除',
-			' Deleting a background is permanent. There is no undo. ': '背景の削除は元に戻せません。',
+		//
+		// Popover: Change Organization
+		//
+		Change: '変更',
 
-			// Popup Menu: Commenting Permissions
-			'Disabled ': '無効 ',
-			'Members ': 'メンバー ',
-			'Members and Observers ': 'メンバーと観察者 ',
-			'Organization members ': '組織のメンバー ',
-			'Public members ': '誰でも ',
+		//
+		// Sub Menu: Change Background
+		//
+		Photos: '写真',
+		'Patterns and Textures': 'パターンやテクスチャ',
+		Custom: 'カスタム',
+		'Uploading…': 'アップロード中…', // Gold
+		Options: 'オプション', // Gold
 
-			' No one is allowed to comment. ': '誰もコメントすることができません。',
-			' Allow admins and normal members to comment. ': '管理者とメンバーがコメントできます。',
-			' Allow admins, normal members, and observers to comment. ': '管理者・メンバー・観察者がコメントできます。',
-			' Allow admins, normal members, observers, and org members to comment. ': '管理者・メンバー・観察者・組織のメンバーがコメントできます。',
-			' Allow any Trello member to comment. ': 'Trello の利用者は誰でもコメントできます。',
+		//
+		// Popover: Background Options (Gold)
+		//
+		'Display Type': '表示種別',
+		' Cover  ': 'カバー',
+		' Tile  ': 'タイル',
+		'Board Text': 'ボードの文字',
+		' Light  ': '明るめ',
+		' Dark  ': '暗め',
+		'Delete background.': '背景を削除',
 
-			// Popup Menu: Invitations Permissions / Add Member Permissions
-			'Admins ': '管理者 ',
-			'All Members ': 'メンバー ',
+		//
+		// Popover: Delete Background?
+		//
+		' Deleting a background is permanent. There is no undo. ': '背景の削除は元に戻せません。',
 
-			' Allow only admins to add and invite others. ': '管理者だけが、新しいメンバーを追加または招待できます。',
-			' Allow members and admins to add and invite others. ': 'メンバーと管理者が、新しいメンバーを追加または招待できます。',
+		//
+		// Popover: Commenting Permissions
+		//
+		'Disabled ': '無効 ',
+		'Members ': 'メンバー ',
+		'Members and Observers ': 'メンバーと観察者 ',
+		'Organization members ': '組織のメンバー ',
+		'Public members ': '誰でも ',
 
-			// Popup Menu: Add Cards via Email
-			'Your email address for this board': 'このボード用のメールアドレス',
-			'Generate a new email address.': '新しいメールアドレスを生成',
-			'Email me this address.': 'このメールアドレスをメールで送信',
-			'Your emailed cards appear in…': 'メールで送ったカードは以下に追加…',
-			'More email formatting tips.': 'メールの書式について',
+		' No one is allowed to comment. ': '誰もコメントすることができません。',
+		' Allow admins and normal members to comment. ': '管理者とメンバーがコメントできます。',
+		' Allow admins, normal members, and observers to comment. ': '管理者・メンバー・観察者がコメントできます。',
+		' Allow admins, normal members, observers, and org members to comment. ': '管理者・メンバー・観察者・組織のメンバーがコメントできます。',
+		' Allow any Trello member to comment. ': 'Trello の利用者は誰でもコメントできます。',
 
-			List: 'リスト',
-			Position: '位置',
-			Top: '一番上',
-			Bottom: '一番下',
+		//
+		// Popover: Invitations Permissions / Add Member Permissions
+		//
+		'Admins ': '管理者 ',
+		'All Members ': 'メンバー ',
 
-			// Popup Form: Copy Board
-			'Keep Cards': 'カードも含める',
+		' Allow only admins to add and invite others. ': '管理者だけが、新しいメンバーを追加または招待できます。',
+		' Allow members and admins to add and invite others. ': 'メンバーと管理者が、新しいメンバーを追加または招待できます。',
 
-			// Popup Menu: Share, Print, and Export
-			'Link to this board': 'ボードのリンク URL',
-			'visible to org': '組織内に公開',
+		//
+		// Popover: Add Cards via Email
+		//
+		'Your email address for this board': 'このボード用のメールアドレス',
+		'Generate a new email address.': '新しいメールアドレスを生成',
+		'Email me this address.': 'このメールアドレスをメールで送信',
+		'Your emailed cards appear in…': 'メールで送ったカードは以下に追加…',
+		'More email formatting tips.': 'メールの書式について',
 
+		' Don\'t share this email address. Anyone who has it can add cards as you. When composing emails, the card title goes in the subject and the card description in the body. '
+				: 'このメールアドレスを共有しないでください。誰でもあなたに成りすましてカードが追加できるようになってしまいます。メールを送るとメールの題名は新しいカードのタイトルに、メールの本文は新しいカードの説明になります。',
 
+		// Rich Listbox: List
+		List: 'リスト',
+
+		// Rich Listbox: Position
+		Position: '位置',
+		Top: '一番上',
+		Bottom: '一番下',
+
+		//
+		// Popover: Copy Board
+		//
+		// Title
+		'Keep Cards': 'カードも含める',
+
+		//
+		// Popover: Share, Print, and Export
+		//
+		'Link to this board': 'ボードのリンク URL',
+		'visible to org': '組織内に公開',
+		'Print…': '印刷…',
+		'Export JSON': 'JSON でエクスポート',
+
+		//
+		// Popover: Close Board?
+		//
+		' You can re-open the board by clicking the "Boards" menu from the header, selecting "View Closed Boards", finding the board and clicking "Re-open". '
+				: 'ヘッダーの「ボード」メニューの「閉じたボードを表示」を選び、ボードを探して「開き直す」で元に戻すことができます。',
+		Close: '閉じる',
+
+		//
 		// Floating Window: Board Activity
+		//
 		'Board Activity': 'ボードの動き',
 
-		// List View
+		//
+		// Generic List View
+		//
 		'Add a list…': 'リストを追加…',
 		'Add a card…': 'カードを追加…',
 		Add: '追加',
 
+		//
 		// Calendar View
+		//
 		Today: '今日',
 		Week: '週',
 		Month: '月',
@@ -504,26 +808,41 @@
 		Sat: '土',
 		'Add a card...': 'カードを追加...',
 
-		// Popup Menu: List Actions
+		//
+		// Popover: List Actions
+		//
 		'Add Card…': 'カードを追加…',
 		'Copy List…': 'リストをコピー…',
 		'Move List…': 'リストを移動…',
+		// Subscribe
 		'Move All Cards in This List…': 'リストの全カードを移動…',
 		'Archive All Cards in This List…': 'リストの全カードをアーカイブ…',
 		'Archive This List': 'リストをアーカイブ',
-		'Create List': 'リストを作成', // submit button
-		'Archive All': '全てをアーカイブ', // submit button
 
-		// Popup Menu: Card Actions
+		//
+		// Popover: Copy List
+		//
+		'Create List': 'リストを作成',
+
+		// Popover: Archive All Cards in this List?
+		' This will remove all the cards in this list from the board. To view archived cards and bring them back to the board, click "Menu" > "Archived Items". '
+				: 'このリストの全てのカードがアーカイブされ、非表示になります。「メニュー」→「アーカイブを見る」でアーカイブされたカードを確認したりボードに戻したりできます。',
+		'Archive All': '全てをアーカイブ',
+
+		//
+		// Popover: Card Actions
+		//
 		'Labels…': 'ラベル…',
 		'Members…': 'メンバー…',
 		'Due Date…': '期限…',
+		// Move
 		'More Actions…': 'その他の操作…',
+		// Archive
 
 		'Edit sticker.': '調整', // レイアウトの幅の制限
-		'Rotate': '回転',
-
-
+		Rotate: '回転',
+		// Move
+		// Remove
 
 		//
 		// Floating Window: Card
@@ -544,16 +863,24 @@
 		Archive: 'アーカイブ',
 		'Send to board': 'ボードに戻す',
 
-		// Popup Form: Member
+		//
+		// User Card (Card)
+		//
 		'Remove from Card': 'カードから外す',
 
-		// Popup Menu: Change Labels
+		//
+		// Popover: Change Labels
+		//
 		'Change label titles…': 'ラベル名を変更…',
 
-		// Popup Form: Add Checklist
+		//
+		// Popover: Add Checklist
+		//
 		'Copy Items From…': '以下から項目をコピー…',
 
-		// Popup Form: Change Due Date
+		//
+		// Popover: Change Due Date
+		//
 		Date: '日付',
 		Time: '時刻',
 		Prev: '前へ',
@@ -579,18 +906,33 @@
 		Sa: '土',
 		Remove: '設定しない',
 
-		// Popup Form: Attach From
+		//
+		// Popover: Attach From...
+		//
 		Computer: 'アップロード',
+		' Tip: You can drag and drop files from your desktop to upload them. '
+				: ' ヒント: ファイルをドラッグドロップでアップロードすることもできます。 ',
 
-		// Popup Form: Move Card
+		//
+		// Popover: Move Card
+		//
 		Board: 'ボード',
 		Move: '移動',
 
-		// Popup Menu: More
+		//
+		// Popover: More
+		//
 		'Copy…': 'コピー…',
-		'Print…': '印刷…',
-		'Export JSON': 'JSON でエクスポート',
+		// Print…
+		// Export JSON
 		'Link to this card': 'カードのリンク URL',
+		// '  Added ': ' 追加: ',
+
+		//
+		// Popover: Delete Card?
+		//
+		' All actions will be removed from the activity feed and you won\'t be able to re-open the card. There is no undo. You can archive a card to remove it from the board and preserve the activity. ':
+				'全てのコメントや動きなどは削除され、カードを開き直すことはできなくなります。カードの削除は元に戻せません。削除の代わりにアーカイブすることで、カードの情報を保持したままボードから取り除くことができます。',
 
 		// Contents
 		Comment: 'コメント',
@@ -605,16 +947,36 @@
 		'You have unsaved edits on this field. ': '保存していない編集内容があります。 ',
 		'View edits': '編集内容を表示',
 		discard: '編集を破棄',
+		'Make Cover': 'カードのカバーに表示する',
+		'Remove Cover': 'カードのカバーに表示しない',
 
-		// Popup Menu: Checklist
+		//
+		// Popover: Checklist
+		//
 		'Delete Checklist': 'チェックリストを削除',
 
-		// Popup Menu: Options
+		//
+		// Popover: Delete $checklist?
+		//
+		' Deleting a checklist is permanent and there is no way to get it back. '
+				: 'チェックリストの削除は元に戻せません。',
+
+		//
+		// Popover: Delete File?
+		//
+		' Deleting an attachment is permanent. There is no undo. '
+				: '添付ファイルの削除は元に戻せません。',
+
+		//
+		// Popover: Options
+		//
 		'Select Emoji…': '絵文字を選択…',
-		'Mention Member…': 'メンバーへの通知をつける…',
+		'Mention Member…': 'メンバーへの言及をつける…',
 		'Upload Custom Emoji…': 'カスタム絵文字のアップロード…', // Gold
 
-		// Popup Form: Upload Emoji (Gold)
+		//
+		// Popover: Upload Emoji (Gold)
+		//
 		'Upload Image': '画像のアップロード',
 		'Emoji Name': '絵文字の名前',
 		'The name will default to the name of the uploaded file. You can change it here, though.'
@@ -622,12 +984,17 @@
 		'Preview': 'プレビュー',
 		'Create Custom Emoji': 'カスタム絵文字を作成',
 
-
-		// Popup Menu: Mention
+		//
+		// Popover: Mention
+		//
 		'Mention All Card Members': 'カードのメンバー全員',
 		'Mention All Board Members': 'ボードのメンバー全員',
+		' Mention All Commenters ': 'コメントした人全員',
+		'No matching members': '一致するメンバーがいません',
 
-		// Popup Form: Copy Card
+		//
+		// Popover: Copy Card
+		//
 		'Keep…': '以下を一緒にコピー…',
 		'Checklists ': 'チェックリスト ',
 		'Labels ': 'ラベル ',
@@ -635,20 +1002,7 @@
 		'Comments ': 'コメント ',
 		'Create Card': 'カードを作成', // submit button
 
-
-		'  Added ': ' 追加: ', // (!?)
-
 		Cancel: 'キャンセル', // button
-
-		//
-		// Messages
-		//
-
-		' joined                       this card.': ' がメンバーになりました。',
-		' left                       this card.': ' がメンバーから外れました。',
-
-		' made                       this board                   visible to members of its organization.': ' が、このボードが組織のメンバーだけに見えるように設定しました。',
-		' made                       this board                   visible to the public.': ' が、このボードを誰でも見えるように設定しました。',
 
 		//
 		// Help
@@ -662,7 +1016,7 @@
 				: 'Trello はキーボードショートカットによる手早い操作をサポートしています。いつでも「?」を押すと説明を表示します。',
 		' Trello Development Board ': ' Trello 開発ボード ',
 		' Trello is built in public using Trello. See what’s next at trello.com/dev. '
-				: 'Trello は Trello を使って作られています。次に trello.com でどのような機能が開発されるかどうか見ることができます。',
+				: 'Trello は Trello を使って開発しています。次に trello.com でどのような機能が開発されるか見ることができます。',
 
 		//
 		// Shortcuts
@@ -748,59 +1102,38 @@
 				: '新しいカードを追加する際に「^」に続きリストの名前または位置を入力すると、場所の一覧がリスト表示されます。番号の代わりに「top」や「bottom」と入力し、現在のリストの一番上や一番下を指定することもできます。このリストは上下キーで移動でき、Enter か Tab を押すと作成中のカードの場所を変更することができます。',
 
 		//
-		// Explanations
+		// Activities
 		//
 
-		' This board is private.  Only people added to the board can view and edit it.  '
-				: ' ボードを非公開にします。ボードに追加したメンバーだけが表示及び編集できます。 ',
-		' This board is public. It\'s visible to anyone with the link and will show up in search engines like Google.  Only people added to the board can edit.  '
-				: 'ボードを公開します。ボードやその URL は誰でも表示でき、Google などの検索エンジンの検索結果に表示される可能性もあります。ボードに追加したメンバーだけが編集できます。 ',
-		' The board must be added to an org to enable this. '
-				: 'ボードを組織に追加すると選択できます。',
+		'      added                     this board                   to                          ': ' がボードを次の組織に追加しました: ',
+		' invited an unconfirmed member to                       this board.': ' が仮メンバーをボードに追加しました。',
 
-		'   Your orgname is used in various URLs. Minimum of 3 characters, alphanumeric only, no spaces.  '
-				: ' 組織ユーザー名は URL の一部になります。最低 3 文字で、英数字のみが使用できます。空白は使用できません。',
-		'  An organization is a group of boards and members.   '
-				: ' 組織はメンバーとボードのグループです。 ',
-		' An organizations is a collection of members and boards. They make sharing and working within a group even easier. '
-				: ' 組織とはメンバーとボードをまとめたものです。組織を使うとグループ作業や情報共有が簡単になります。 ',
+		' created                       this board.': ' がボードを作成しました。',
+		' joined                       this card.': ' がメンバーになりました。',
+		' left                       this card.': ' がメンバーから外れました。',
+		' changed the background of                       this board.': ' が背景を変更しました。',
 
-		' Search for a person in Trello by name or email address, or enter an email address to invite someone new. '
-				: ' ユーザーは Trello 上の名前かメールアドレスで検索できます。メールアドレスを入力することで、新しいユーザーを招待することもできます。 ',
-		' This change will take effect after you click on the link in the confirmation email sent to the new email address. '
-				: '新しいメールアドレスに届く確認メールに記載しているリンクをクリックすると、メールアドレスの変更が完了します。',
+		' changed card aging to regular mode.': ' がカードの老化を標準モードに変更しました。',
+		' changed card aging to pirate mode.': ' がカードの老化を海賊モードに変更しました。',
 
-		'Show images on front of cards.'
-				: 'カードの前に画像を表示します。',
-		' Any org member can join this board without being invited.   '
-				: ' 組織のメンバーは招待されなくてもボードに参加することができます。',
-		' Don\'t share this email address. Anyone who has it can add cards as you. When composing emails, the card title goes in the subject and the card description in the body. '
-				: 'このメールアドレスを共有しないでください。誰でもあなたに成りすましてカードが追加できるようになってしまいます。メールを送るとメールの題名は新しいカードのタイトルに、メールの本文は新しいカードの説明になります。',
+		' enabled the voting power-up.': 'が投票拡張機能を有効にしました。',
+		' enabled the calendar power-up.': 'がカレンダー拡張機能を有効にしました。',
+		' enabled the card aging power-up.': 'がカードの老化拡張機能を有効にしました。',
+		' disabled the voting power-up.': 'が投票拡張機能を無効にしました。',
+		' disabled the calendar power-up.': 'がカレンダー拡張機能を無効にしました。',
+		' disabled the card aging power-up.': 'がカードの老化拡張機能を無効にしました。',
 
-		' Tip: You can drag and drop files from your desktop to upload them. '
-				: ' ヒント: ファイルをドラッグドロップでアップロードすることもできます。 ',
-
-		' Your initials are used in place of your avatar if your avatar is not set. Usernames require a minimum of 3 characters, alphanumeric only. '
-				: ' アイコン画像を指定しない場合、代わりに愛称が使われます。ユーザー名は最低 3 文字で、英数字のみが使用できます。',
-
-		' This will remove all the cards in this list from the board. To view archived cards and bring them back to the board, click "Menu" > "Archived Items". '
-				: 'このリストの全てのカードがアーカイブされ、非表示になります。「メニュー」→「アーカイブを見る」でアーカイブされたカードを確認したりボードに戻したりできます。',
-
-		' This will cancel your paid account. We will keep your data and your account will still be usable. You can reinstate the paid account at any time by re-entering credit card information. '
-				: '有料アカウントをキャンセルします。アカウント情報やデータは引き続き利用できます。クレジットカード情報を入力することでいつでも有料アカウントに戻すことができます。',
-
-		' Enable this power-up to allow users to vote on your cards. Votes are stored and synchronized between all users sharing this board. Choose between multiple permission levels for which users can vote on cards. View the number of votes on each card from the main Trello list pane or in a card\'s detail pane.  '
-				: 'この拡張機能を有効にすると利用者がカードに投票することができるようになります。投票はボードの利用者全員で共有・同期されます。カードに投票する権限は数種類から選択できます。投票数は一覧画面や詳細画面に表示されます。',
-		' Enable the calendar power-up to gain access to the Trello calendar view. Display cards with due dates in a weekly or monthly format for a time-based overview of cards. Most useful for time-sensitive projects and projects with multiple due dates.  '
-				: 'この拡張機能を有効にするとカレンダー表示が使えるようになります。期限を持つカードが時間に沿って週または月単位に表示されます。期限を重視するプロジェクト等で便利です。',
-		' Cards will visibly “age” as time passes without any activity. Regular mode will cause old cards to become progressively more transparent. Pirate mode will cause old cards to crack and tear like an old treasure map. Once cards have new activity on them, their age counter is reset and they appear new again. Age thresholds are 1, 2, and 4 weeks.  '
-				: '時間が経過しても動きがないカードは表示が「古く」なっていきます。標準モードでは古いカードは徐々に透明になっていきます。海賊風モードでは古いカードは昔の宝の地図のようにひびが入ったり割けたりします。カード上で動きがあると古さはリセットされ新しい表示に戻ります。古さの閾値は 1, 2, 4 週間です。',
+		' made                       this board                   visible to its members.': ' が、このボードをメンバーだけに見えるように設定しました。 ',
+		' made                       this board                   visible to members of its organization.': ' が、このボードを組織のメンバーだけに見えるように設定しました。',
+		' made                       this board                   visible to the public.': ' が、このボードを誰にでも見えるように設定しました。',
 
 	}
 
 	// プレースホルダ
 	var placeholders = {
+		'Find boards by name…': '名前でボードを検索…',
 		'Search your boards…': '参加ボードを検索…',
+		'Find members by name…': '名前でメンバーを検索…',
 		'Untitled Board': 'タイトルのないボード',
 		'Search archived cards': 'アーカイブしたカードを検索',
 		'No name': '名前なし',
@@ -813,12 +1146,14 @@
 
 	// パターン（置換パターン -> マッチする正規表現 ）
 
+	// TODO: use Object instead of Array
+
 	var subNames = {
 		' ボードを「$1」のメンバーだけに公開します。ボードに追加したメンバーだけが編集できます。 '
 				: /^\s*This board is visible to members of\s+(.*?)\s*.\s*Only people added to the board can edit.\s*$/,
 	}
 
-	// Popup (pop-over) messages
+	// Popover messages
 	var popupMessagePatterns = {
 		' 「$1」から外れますか？ 現在自分が参加している組織のボードには引き続き参加した状態になります。 '
 				: /^\s*Leave (.*?)\? You will remain on all your boards in this organization.\s*$/,
@@ -830,7 +1165,7 @@
 				: /^\s*Remove (.*?) \((.*?)\) from (.*?)\? The member will be removed from all cards on this board. They will receive a notification.\s*$/,
 	}
 
-	// TODO: use Object instead of Array
+	// Activity messages
 	var phenomDescPatterns = {
 		' がカードを「$1」に追加し、参加しました。': /^\s*added\s+this\s+card\s+to\s+(.*?)\s+and\s+joined\.\s*$/, // added this card to $1 and joined.
 		' がカードを「$1」に追加し、メンバーを追加しました。': /^\s*added\s+this\s+card\s+to\s+(.*?)\s+and\s+added\s*$/, // added this card to $1 and added
@@ -843,7 +1178,7 @@
 		' が「$1」を未完了に戻しました。': /^\s*marked\s+(.*?)\s+incomplete\s+on\s+this\s+card\.\s*$/, // marked $1 incomplete on this card.
 	}
 
-	// TODO: use Object instead of Array
+	// Aggregated Activity messages
 	var phenomDescItemPatterns = {
 		'カードを「$1」から「$2」に移動': /^\s*moved\s+from\s+(.+?)\s+to\s+(.+?)\s*$/, // moved from $1 to $2
 		'「$1」を完了': /^\s*completed\s+(.+?)\s*$/, // completed $1
