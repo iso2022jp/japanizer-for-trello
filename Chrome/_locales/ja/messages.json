@@ -1,8 +1,8 @@
 {
 	"name": {
-		"message": "Trello 日本語化"
+		"message": "日本語化 for Trello"
 	},
 	"description": {
-		"message": "Trello の英語メニュー等を日本語で表示します。"
+		"message": "Trello Web サイトの英語のメニューやボタン等を日本語で表示します。"
 	}
 }

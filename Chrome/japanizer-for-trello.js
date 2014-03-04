@@ -99,6 +99,7 @@
 		// Popover: Boards
 		//
 		' My Boards': ' マイボード',
+		'  My Boards    ': ' マイボード',
 		'See All Boards': '全てのボードを見る',
 		'New Board…': '新しいボード…',
 		'View Closed Boards': '閉じたボードを表示',

@@ -1,16 +1,16 @@
 {
 	"manifest_version": 2,
-	"version": "0.9.3",
+	"version": "0.9.4",
 	"default_locale": "ja",
 	"name": "__MSG_name__",
 	"description": "__MSG_description__",
-	"short_name": "Trello-ja",
+	"short_name": "japanizer-for-trello",
 	"author": "kes (@iso2022jp)",
 	"content_scripts": [
 		{
 			"matches": [ "https://trello.com/*" ],
 			"run_at": "document_start",
-			"js": [ "japanize-trello.js" ]
+			"js": [ "japanizer-for-trello.js" ]
 		}
 	]
 }

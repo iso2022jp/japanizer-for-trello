@@ -1,8 +1,8 @@
 {
 	"name": {
-		"message": "Trello Japanizer"
+		"message": "Japanizer for Trello"
 	},
 	"description": {
-		"message": "Display Trello menus and buttons in Japanese."
+		"message": "Display menus and buttons on the Trello's web site in Japanese."
 	}
 }
