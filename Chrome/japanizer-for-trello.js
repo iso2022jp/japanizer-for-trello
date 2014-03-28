@@ -1,5 +1,5 @@
 /**
- * Copyright 2013 Hiroyuki Ushito (@iso2022jp)
+ * Copyright 2014 Hiroyuki Ushito (@iso2022jp)
  */
 'use strict'
 
@@ -221,7 +221,7 @@
 		'Username is taken': 'そのユーザー名は既に使われています。',
 
 		' Your initials are used in place of your avatar if your avatar is not set. Usernames require a minimum of 3 characters, alphanumeric only. '
-				: ' アイコン画像を指定しない場合、代わりに愛称が使われます。ユーザー名は最低 3 文字で、英数字のみが使用できます。',
+				: ' アイコンに画像を指定しない場合、代わりに愛称が使われます。ユーザー名は最低 3 文字で、英数字のみが使用できます。',
 
 		//
 		// Popover: Change Email
@@ -273,6 +273,7 @@
 		//
 		// Boards - /
 		//
+		'Starred Boards': ' スターのついたボード ',
 		'My Boards': 'マイボード',
 		Overview: '概要',
 		'New board in organization…': '新しいボード…',
@@ -364,10 +365,19 @@
 		//
 		// Organization Members - /$org/members
 		//
-		'   Remove  ': '削除',
-		'  Leave   ': '外れる',
+
+		' Remove… ': '削除…',
+		Leave: '外れる',
 		' You can\’t change roles because there must be at least one admin. '
 				: '最低一人の管理者が必要なので、権限を変更することができません。',
+
+		//
+		// Popover: Remove or Deactivate Member
+		//
+		'Remove from organization': '組織から外す',
+		' Remove all access to the organization.  The member will remain on all their boards in this organization. They will receive a notification.  '
+				: '組織にアクセスできないようにします。このメンバーが参加している組織のボードには引き続き参加した状態になります。メンバーには通知が届きます。',
+				
 		
 		//
 		// Organization Settings - /$org/account
@@ -387,7 +397,11 @@
 		//
 		// Popover: Delete Organization?
 		//
+
+		// 古い？
 		' Deleting an organization is permanent.        Are you sure you want to delete this organization? There is no undo.        Boards with this organization won\'t be deleted. Your boards in this        organization will appear in your personal boards list. '
+				: '組織の削除は元に戻せません。それでも組織を削除してもよろしいですか？ 組織の持つボードは削除されません。自分がメンバーである組織のボードはマイボードに表示されるようになります。',
+		' Deleting an organization is permanent. Are you sure you want to delete this organization? There is no undo. Boards with this organization won\'t be deleted. Your boards in this organization will appear in your personal boards list. '
 				: '組織の削除は元に戻せません。それでも組織を削除してもよろしいですか？ 組織の持つボードは削除されません。自分がメンバーである組織のボードはマイボードに表示されるようになります。',
 		'Delete Forever': 'それでも削除する',
 
@@ -464,9 +478,15 @@
 		// Billing (Gold) - /$user/billing
 		//
 		'Trello Gold is  active! ': 'Trello Gold は有効です！',
+		'Trello Gold is cancelled. ': 'Trello Gold はキャンセルされました。',
 		' Your credits will expire on ': '有効期限が切れる日: ',
 		'Add Billing Information': '支払情報の追加', // button
 		' Keep using Trello in style, even after your credits expire! ': '有効期限が切れても、いつも通り Trello をお使い下さい！',
+		'Reactivate Trello Gold': 'Trello Gold を再開する',
+		'Charge Monthly': '月払い',
+		'Charge Yearly (Save!)': '年払い（割安！）',
+		'$5 per month': '$5/月',
+		'$45 per year': '$45/年',
 		'Billing History': '課金履歴',
 		'Cancel Trello Gold…': 'Trello Gold をキャンセルする…',
 
@@ -506,6 +526,11 @@
 		//
 		// Board View - /b/$board
 		//
+		
+		// ～ is closed. 
+		' Click here to re-open it. ': 'ここをクリックすると開き直します。',
+		
+		'Get Trello Gold': 'Trello Gold にアップグレード',
 
 		// Toolbar
 		Private: '非公開',
@@ -526,8 +551,9 @@
 		'Filter cards': 'カードを絞り込む',
 		'Archived items': 'アーカイブを見る',
 		'Stickers': 'ステッカー',
-		'Power-Ups': '拡張機能',
+		'Power-Ups': '強化機能',
 		'Settings': '設定',
+		' Email-to-board Settings… ': 'ボード用メールアドレスの設定…',
 		'Subscribe ': '通知を受け取る',
 		'Subscribed ': '注目中',
 		' Pin to Header Menu ': 'ヘッダーメニューに表示する',
@@ -535,7 +561,7 @@
 		'Copy Board…': 'コピー…',
 		'Share, Print, and Export…': '共有・印刷・エクスポート…',
 		'Close Board…': 'ボードを閉じる…',
-		'Leave Board…': 'ボードのメンバーから外れる',
+		'Leave Board…': 'ボードのメンバーから外れる…',
 
 		//
 		// Floating Window: Board Information
@@ -622,14 +648,14 @@
 		Enable: '有効化',
 		Disable: '無効化',
 
-		'Back to Power-Ups': '拡張機能に戻る',
+		'Back to Power-Ups': '強化機能に戻る',
 		'More…': '詳細…',
 		Screenshots: 'スクリーンショット',
 		// Settings
 
 		// Voting
 		' Enable this power-up to allow users to vote on your cards. Votes are stored and synchronized between all users sharing this board. Choose between multiple permission levels for which users can vote on cards. View the number of votes on each card from the main Trello list pane or in a card\'s detail pane.  '
-				: 'この拡張機能を有効にすると利用者がカードに投票することができるようになります。投票はボードの利用者全員で共有・同期されます。カードに投票する権限は数種類から選択できます。投票数は一覧画面や詳細画面に表示されます。',
+				: 'この強化機能を有効にすると利用者がカードに投票することができるようになります。投票はボードの利用者全員で共有・同期されます。カードに投票する権限は数種類から選択できます。投票数は一覧画面や詳細画面に表示されます。',
 		'Who is allowed to vote on cards?': 'カードに投票可能な権限',
 		'Members and Observers': 'メンバーと観察者',
 		' Available only on boards with observers. ': '観察者がいるボードの場合に選択できます。',
@@ -647,7 +673,7 @@
 
 		// Calendar
 		' Enable the calendar power-up to gain access to the Trello calendar view. Display cards with due dates in a weekly or monthly format for a time-based overview of cards. Most useful for time-sensitive projects and projects with multiple due dates.  '
-				: 'この拡張機能を有効にするとカレンダー表示が使えるようになります。期限を持つカードが時間に沿って週または月単位に表示されます。期限を重視するプロジェクト等で便利です。',
+				: 'この強化機能を有効にするとカレンダー表示が使えるようになります。期限を持つカードが時間に沿って週または月単位に表示されます。期限を重視するプロジェクト等で便利です。',
 		'Enable iCalendar Feed?': 'iCalendar フィード',
 		' Enabled': '有効',
 		' Disabled': '無効',
@@ -744,10 +770,10 @@
 		//
 		// Popover: Add Cards via Email
 		//
-		'Your email address for this board': 'このボード用のメールアドレス',
+		'Your email address for this board': 'このボード用メールアドレス（自分専用）',
 		'Generate a new email address.': '新しいメールアドレスを生成',
 		'Email me this address.': 'このメールアドレスをメールで送信',
-		'Your emailed cards appear in…': 'メールで送ったカードは以下に追加…',
+		'Your emailed cards appear in…': 'このアドレスに届いた内容を以下に追加…',
 		'More email formatting tips.': 'メールの書式について',
 
 		' Don\'t share this email address. Anyone who has it can add cards as you. When composing emails, the card title goes in the subject and the card description in the body. '
@@ -849,20 +875,41 @@
 		// Floating Window: Card
 		//
 
-		// Side Menu
+		// Top/Side Menu
+
+		' This card is archived.': 'このカードはアーカイブされています。',
+		Votes: '投票',
+		'Last Updated': '更新日時',
+		'Due Date': '期限',
+		Description: '説明',
+		
+		// Add
+		// Member
 		Labels: 'ラベル',
-		'Edit Labels…': 'ラベルを編集…',
-		'No members': 'メンバーがいません',
-		'Assign…': '割り当て…',
+		Checklist: 'チェックリスト',
+		'Due date': '期限',
+		Attachment: '添付ファイル',
 		Actions: '操作',
-		'Add checklist…': 'チェックリスト追加…',
-		'Due date…': '期限…',
-		'Attach File…': 'ファイルを添付…',
 		'Move…': '移動…',
+		Copy: 'コピー',
 		Subscribe: '注目',
 		Vote: '投票',
 		Archive: 'アーカイブ',
+		'Share and more…': '共有・その他…',
+		 
+		// 'Edit Labels…': 'ラベルを編集…',
+		// 'No members': 'メンバーがいません',
+		// 'Assign…': '割り当て…',
+		// 'Add checklist…': 'チェックリスト追加…',
+		// 'Due date…': '期限…',
+		// 'Attach File…': 'ファイルを添付…',
 		'Send to board': 'ボードに戻す',
+
+		//
+		// Popover: Voters
+		//
+		Voted: '投票済み',
+		//  Show all voters (200 more) 
 
 		//
 		// User Card (Card)
@@ -906,13 +953,16 @@
 		Fr: '金',
 		Sa: '土',
 		Remove: '設定しない',
+		' Click the “Calendar” button in the board header to open the calendar. To change calendar settings, click “Power-Ups” in the board sidebar menu. '
+				: 'ボードの上にある「カレンダー」ボタンをクリックするとカレンダーが開きます。カレンダーの設定を変更するには、ボードのサイドバーにある「強化機能」をクリックしてください。',
 
 		//
 		// Popover: Attach From...
 		//
+		// Computer: 'このコンピューター',
 		Computer: 'アップロード',
-		' Tip: You can drag and drop files from your desktop to upload them. '
-				: ' ヒント: ファイルをドラッグドロップでアップロードすることもできます。 ',
+		' Tip: You can drag and drop files and links onto cards to upload them. '
+				: ' ヒント: ファイルやリンクをドラッグドロップでアップロードすることもできます。 ',
 
 		//
 		// Popover: Move Card
@@ -937,19 +987,19 @@
 
 		// Contents
 		Comment: 'コメント',
-		'Edit the card description.': 'カードの説明を編集',
+		'Edit the description…': '説明を編集',
+		// 'Edit the card description.': 'カードの説明を編集',
 		'Formatting help': '書式の説明',
 		'Delete This Checklist…': 'チェックリストを削除…',
 		Edit: '編集',
 		Delete: '削除',
-		Attachments: 'ファイル',
+		Attachments: '添付ファイル',
+		' Add an attachment… ': '添付ファイルを追加…',
 		Attach: '添付',
 		'Convert to Card': 'カードに変換',
 		'You have unsaved edits on this field. ': '保存していない編集内容があります。 ',
 		'View edits': '編集内容を表示',
 		discard: '編集を破棄',
-		'Make Cover': 'カードのカバーに表示する',
-		'Remove Cover': 'カードのカバーに表示しない',
 
 		//
 		// Popover: Checklist
@@ -1032,7 +1082,7 @@
 				: '「B」を押してヘッダーにあるボードメニューを開きます。ボードの検索と上下矢印キーによるボードの選択ができます。Enter を押して選択したボードを開きます。',
 		'Archive Card': 'カードをアーカイブ',
 		' Pressing “c” will archive a card. ': '「C」を押してカードをアーカイブします。',
-		'Due Date': 'カードの期限を変更',
+		// 'Due Date'
 		' Pressing “d” will open the due date picker for a card. ': '「D」を押してカードの期限ウィンドウを開きます。',
 		'Edit the Card Description': 'カード説明を編集',
 		' If viewing a card, pressing “e” will edit the description. If hovering over a card, pressing “e” will open the card and edit the description. '
@@ -1117,12 +1167,12 @@
 		' changed card aging to regular mode.': ' がカードの老化を標準モードに変更しました。',
 		' changed card aging to pirate mode.': ' がカードの老化を海賊モードに変更しました。',
 
-		' enabled the voting power-up.': 'が投票拡張機能を有効にしました。',
-		' enabled the calendar power-up.': 'がカレンダー拡張機能を有効にしました。',
-		' enabled the card aging power-up.': 'がカードの老化拡張機能を有効にしました。',
-		' disabled the voting power-up.': 'が投票拡張機能を無効にしました。',
-		' disabled the calendar power-up.': 'がカレンダー拡張機能を無効にしました。',
-		' disabled the card aging power-up.': 'がカードの老化拡張機能を無効にしました。',
+		' enabled the voting power-up.': 'が投票機能を有効にしました。',
+		' enabled the calendar power-up.': 'がカレンダー機能を有効にしました。',
+		' enabled the card aging power-up.': 'がカードの老化機能を有効にしました。',
+		' disabled the voting power-up.': 'が投票機能を無効にしました。',
+		' disabled the calendar power-up.': 'がカレンダー機能を無効にしました。',
+		' disabled the card aging power-up.': 'がカードの老化機能を無効にしました。',
 
 		' made                       this board                   visible to its members.': ' が、このボードをメンバーだけに見えるように設定しました。 ',
 		' made                       this board                   visible to members of its organization.': ' が、このボードを組織のメンバーだけに見えるように設定しました。',
@@ -1143,6 +1193,14 @@
 		'Enter date': '日付を入力',
 		'Enter time': '時刻を入力',
 		'Search members': 'メンバーを検索',
+		'Paste any link…': 'リンクを貼り付け…',
+	}
+
+	// 説明
+	var titles = {
+		'Open in New Tab': '新しいタブで開く',
+		'Make Cover': 'カードのカバーに表示する',
+		'Remove Cover': 'カードのカバーに表示しない',
 	}
 
 	// パターン（置換パターン -> マッチする正規表現 ）
@@ -1220,13 +1278,13 @@
 		}
 	}
 
-	var translatePlaceholder = function (node) {
-		var value = node.getAttribute('placeholder')
+	var translateAttribute = function (node, attribute, map) {
+		var value = node.getAttribute(attribute)
 		if (value === null || value.length === 0) {
 			return;
 		}
-		if (value in placeholders) {
-			node.setAttribute('placeholder', placeholders[value])
+		if (value in map) {
+			node.setAttribute(attribute, map[value])
 		}
 	}
 
@@ -1247,7 +1305,13 @@
 		// プレースホルダ
 		result = document.evaluate('.//*[@placeholder]', node, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, result)
 		for (var i = 0; i < result.snapshotLength; ++i) {
-			translatePlaceholder(result.snapshotItem(i))
+			translateAttribute(result.snapshotItem(i), 'placeholder', placeholders)
+		}
+
+		// 説明
+		result = document.evaluate('.//*[@title]', node, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, result)
+		for (var i = 0; i < result.snapshotLength; ++i) {
+			translateAttribute(result.snapshotItem(i), 'title', titles)
 		}
 
 		//
