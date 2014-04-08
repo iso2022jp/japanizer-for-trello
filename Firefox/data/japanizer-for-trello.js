@@ -69,18 +69,18 @@
 		Help: 'ヘルプ',
 		Notifications: '通知',
 		Boards: 'ボード',
-		
+
 		//
 		// Board Sidebar (2014-01-14)
 		//
 		'  Starred Boards    ': ' スターのついたボード ',
-		'  Recent Boards    ': ' 最近使ったボード ',
+		'Recent Boards': ' 最近使ったボード ',
 		' Show all boards. ': 'すべてのボードを表示',
 		' Only show important boards. ': 'よく使うボードだけを表示',
-		' Always keep this menu open. ': 'メニューを常に表示する',
-		' Don\'t keep this menu open. ': 'メニューを常に表示しない',
+		' Always keep this menu open. ': 'このメニューを開いたままにする',
+		' Don\’t keep this menu open. ': 'このメニューを閉じる',
 		' See closed boards… ': '閉じたボードを表示…',
-		
+
 		//
 		// Popover: Add
 		//
@@ -377,8 +377,8 @@
 		'Remove from organization': '組織から外す',
 		' Remove all access to the organization.  The member will remain on all their boards in this organization. They will receive a notification.  '
 				: '組織にアクセスできないようにします。このメンバーが参加している組織のボードには引き続き参加した状態になります。メンバーには通知が届きます。',
-				
-		
+
+
 		//
 		// Organization Settings - /$org/account
 		//
@@ -526,10 +526,10 @@
 		//
 		// Board View - /b/$board
 		//
-		
-		// ～ is closed. 
+
+		// ～ is closed.
 		' Click here to re-open it. ': 'ここをクリックすると開き直します。',
-		
+
 		'Get Trello Gold': 'Trello Gold にアップグレード',
 
 		// Toolbar
@@ -882,7 +882,7 @@
 		'Last Updated': '更新日時',
 		'Due Date': '期限',
 		Description: '説明',
-		
+
 		// Add
 		// Member
 		Labels: 'ラベル',
@@ -896,7 +896,7 @@
 		Vote: '投票',
 		Archive: 'アーカイブ',
 		'Share and more…': '共有・その他…',
-		 
+
 		// 'Edit Labels…': 'ラベルを編集…',
 		// 'No members': 'メンバーがいません',
 		// 'Assign…': '割り当て…',
@@ -909,7 +909,7 @@
 		// Popover: Voters
 		//
 		Voted: '投票済み',
-		//  Show all voters (200 more) 
+		//  Show all voters (200 more)
 
 		//
 		// User Card (Card)
