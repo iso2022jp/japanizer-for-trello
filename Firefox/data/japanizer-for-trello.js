@@ -77,8 +77,8 @@
 		'Recent Boards': ' 最近使ったボード ',
 		' Show all boards. ': 'すべてのボードを表示',
 		' Only show important boards. ': 'よく使うボードだけを表示',
-		' Always keep this menu open. ': 'このメニューを開いたままにする',
-		' Don\’t keep this menu open. ': 'このメニューを閉じる',
+		' Always keep this menu open. ': 'メニューを常に表示する',
+		' Don\’t keep this menu open. ': 'メニューを閉じる',
 		' See closed boards… ': '閉じたボードを表示…',
 
 		//
