@@ -70,6 +70,74 @@
 		Notifications: '通知',
 		Boards: 'ボード',
 
+		// Search (2014-05-17)
+		' You can use search operators like @member, #label, is:archived, and has:attachments to refine your search. '
+				: '@member, #label, is:archived, has:attachments などの演算子を使った絞り込みもできます。',
+		'Learn more…': '詳細…',
+		' Search operators refine your search to help you find specific cards and create highly tailored lists. Trello will suggest operators for you as you type, but here’s a full list to keep in mind. You can add “-” to any operator to do a negative search, such as -has:members to search for cards without any members assigned. '
+				: '検索演算子は検索結果を絞り込み、特定のカードを見つけたり、綿密に設計されたリストを作成したりするのを手助けします。 入力に応じて Trello は検索演算子の候補を表示します。使える演算子の一覧は以下の通りです。任意の演算子の前に "-" をつけると反対の意味になります, 例えば -has:members はメンバーが割り当てられていないカードを検索します。',
+		' Returns cards assigned to a member. If you start typing @, Trello will suggest members for you. '
+				: 'メンバーが割り当てられたカードを返します。@ を入力すると、Trello はメンバーの候補を表示します。',
+		' also works. ': 'でも動作します。',
+		' will include only your cards. ': ' は自分が含まれるカードだけに絞り込みます。',
+		' Returns labeled cards. Trello will suggest labels for you if you start typing # and the label you are looking for. '
+				: 'ラベルがついたカードを返します。# を入力すると Trello はラベルの候補を表示します。',
+		' Returns cards within a specific board. If you start typing '
+				: '指定したボードにあるカードを返します。 ',
+		', Trello will suggest boards for you. You can search by board name, too, such as “board:trello” to search only cards on boards with trello in the board name. '
+				: 'を入力すると Trello はボードの候補を表示します。ボードの名前で検索することもできます。例えば “board:trello” は trello という名前のボードのカードだけに絞り込みます。',
+		' Returns cards within the list named “name”. Or whatever you type besides “name”. '
+				: '指定した名前のリストに含まれるカードを返します。単に名前を入力して検索することもできます。',
+		' Returns cards with attachments. ': '添付のあるカードを返します。',
+		' also work as you would expect. ': ' も同様に使えます。',
+		' Returns cards due within 24 hours. ': '24 時間以内に期限を迎えるカードを返します。',
+		' also work as expected. You can search for a specific day range. For example, adding '
+				: 'も同様に使えます。また、指定した日数で検索することもできます。例えば ',
+		' to search will include cards due in the next 14 days. ': ' は今後 14 日以内に期限を迎えるカードだけに絞り込みます。',
+		' Returns cards created in the last 24 hours. ': '24 時間以内に作成されたカードを返します。',
+		' to the search will include cards created in the last 14 days. ': ' は過去 14 日以内に作成されたカードだけに絞り込みます。',
+		' Returns cards edited in the last 24 hours. ': '24 時間以内に編集されたカードを返します。',
+		' to the search will include cards edited in the last 21 days. ': ' は過去　21 日以内に編集されたカードだけに絞り込みます。',
+		' Returns cards matching the text of card descriptions, checklists, comments, or names. For example, comment:"FIX IT" will return cards with “FIX IT” in a comment. '
+				: 'テキストが説明、チェックリスト、コメント、名前に一致したカードを返します。例えば comment:"FIX IT" は "FIX IT" がコメントに含まれるカードを返します。',
+		' Returns cards that are either open or archived. Trello returns both types by default. '
+				: 'それぞれオープン、アーカイブされたカードを返します。既定では両方のカードを返します。',
+		'Only include cards on starred boards.': 'スターのついたボードのカードだけを返します。',
+
+		'Did you mean…': 'もしかして…',
+		'Cards assigned to a member.': '指定したメンバーに割り当てられたカードだけを返します。',
+		'Cards with this label.': '指定したラベルを持つカードだけを返します。',
+		'Only include cards assigned to me.': '自分が割り当てられているカードだけを返します。',
+		'Only cards on a particular board.': '指定したボードにあるカードだけを返します。',
+		'Cards in the list with matching text.': 'リストの名前に指定したテキストを含むカードだけを返します。',
+		'Only include cards with attachments.': '添付のついたカードだけを返します。',
+		'Only include cards with a cover.': 'カバー画像のついたカードだけを返します。',
+		'Only include cards that have a description.': '説明のあるカードだけを返します。',
+		'Only include cards that have stickers.': 'ステッカーがついたカードだけを返します。',
+		'Only include cards that have members assigned.': 'メンバーが割り当てられているカードだけを返します。',
+		'Cards due in the next 24 hours.': '24 時間以内に期限を迎えるカードだけを返します。',
+		'Cards due in the next 7 days.': '7 日以内に期限を迎えるカードだけを返します。',
+		'Cards due in the next 28 days.': '28 日以内に期限を迎えるカードだけを返します。',
+		'Cards that are past due.': '期限が過去日のカードだけを返します。',
+		'Cards created in the last 24 hours.': '24 時間以内に作成されたカードだけを返します。',
+		'Cards created in the last 7 days.': '7 日以内に作成されたカードだけを返します。',
+		'Cards created in the last 28 days.': '28 日以内に作成されたカードだけを返します。',
+		'Cards edited in the last 24 hours.': '24 時間以内に編集されたカードだけを返します。',
+		'Cards edited in the last 7 days.': '7 日以内に編集されたカードだけを返します。',
+		'Cards edited in the last 28 days.': '28 日以内に編集されたカードだけを返します。',
+		'Cards that match text in the description.': '説明に指定したテキストを含むカードだけを返します。',
+		'Cards that match text in a checklist.': 'チェックリストに指定したテキストを含むカードだけを返します。',
+		'Cards that match text in the comment.': 'コメントに指定したテキストを含むカードだけを返します。',
+		'Cards that match text in the name.': '名前に指定したテキストを含むカードだけを返します。',
+		'Only include open cards.': '開いているカードだけを返します。',
+		'Only include archived cards.': 'アーカイブされたカードだけを返します。',
+
+		'Cards assigned to ': 'カードに割り当てられた人: ',
+		'Cards on the board ': 'カードを含むボード: ',
+
+		'Open in a Page': 'ページで開く',
+		'Show more cards…': '続きを見る…',
+
 		//
 		// Board Sidebar (2014-01-14)
 		//
